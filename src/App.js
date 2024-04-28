@@ -33,25 +33,45 @@ function App() {
 
   return (
     <div className="App">
-      <div className='header'>
+      <div className="header">
         <h1>The Royal Bank of Flatiron</h1>
       </div>
 
-      <div className='search'>
-        <input type='text' placeholder='Search Your Transaction '></input>
-        <button type='submit'>&#128269;</button>
+      <div className="search">
+        <input type="text" placeholder="Search Your Transaction"></input>
+        <button type="submit">&#128269;</button>
       </div>
 
-      <div className='input'>
-        <input type='text' placeholder='Date' value={date} onChange={handleDateChange}></input>
-        <input type='text' placeholder='Description' value={description} onChange={handleDescriptionChange}></input>
-        <input type='text' placeholder='Category' value={category} onChange={handleCategoryChange}></input>
-        <input type='text' placeholder='Amount' value={amount} onChange={handleAmountChange}></input>
+      <div className="input">
+        <input
+          type="text"
+          placeholder="Date"
+          value={date}
+          onChange={handleDateChange}
+        ></input>
+        <input
+          type="text"
+          placeholder="Description"
+          value={description}
+          onChange={handleDescriptionChange}
+        ></input>
+        <input
+          type="text"
+          placeholder="Category"
+          value={category}
+          onChange={handleCategoryChange}
+        ></input>
+        <input
+          type="text"
+          placeholder="Amount"
+          value={amount}
+          onChange={handleAmountChange}
+        ></input>
       </div>
 
       <button onClick={addTransaction}>Add Transaction</button>
-     
-      <table className='table'> 
+
+      <table className="table">
         <thead>
           <tr>
             <th>Date</th>
@@ -61,7 +81,7 @@ function App() {
           </tr>
         </thead>
         <tbody>
-          {transactions.map((transaction, index) => (  //use off .map to update by iteration
+          {transactions.map((transaction, index) => (
             <tr key={index}>
               <td>{transaction.date}</td>
               <td>{transaction.description}</td>
@@ -75,4 +95,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;          
