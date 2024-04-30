@@ -16,7 +16,6 @@ function App() {
     
     
     //adding eventhandlers to handle change in the input
-    //e.target.value access the value of the input fielld
     const handleDateChange=(e)=>setDate(e.target.value)
     const handleDescriptionChange=(e)=>setDescription(e.target.value)
     const handleCategoryChange=(e)=>setCategory(e.target.value)
