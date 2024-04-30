@@ -37,7 +37,7 @@ const allTransactions = [...transactions, // Adds transactions
     { date: "2021-06-05", description: "Movies", category: "Entertainment", amount:100 }, // Sample transactions
     { date: "2020-07-07", description: "Starbucks", category: "Food", amount: 2000 },
     { date: "2013-17-08", description: "Jorts,Vivienne Westwood", category: "Fashion", amount: 900 },
-    { date: "2000-09-04", description: "Paycheck from Bob's burgers", category: "Income", amount: 400 },
+    { date: "2000-09-04", description: "Paycheck from Bob's burgers", category: "Income", amount: 40000 },
     
   ];
 //use of .filter which filters transactions based on what the user has place in the search field
