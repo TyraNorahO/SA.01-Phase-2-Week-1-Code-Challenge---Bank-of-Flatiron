@@ -35,10 +35,10 @@ function App() {
    }
 //for the user to be able to filter through all the transactions in the table
 const allTransactions = [...transactions, // Adds transactions
-    { date: "2019-08-07", description: "Movies", category: "Entertainment", amount:100 }, // Sample transactions
-    { date: "2019-07-07", description: "Chipotle", category: "Food", amount: 200 },
-    { date: "2013-12-07", description: "Sunglasses,UrbanOutfitters", category: "Fashion", amount: 700 },
-    { date: "2000-05-07", description: "Paycheck from Bob's burgers", category: "Income", amount: 200 },
+    { date: "2021-06-05", description: "Movies", category: "Entertainment", amount:100 }, // Sample transactions
+    { date: "2020-07-07", description: "Chipotle", category: "Food", amount: 2000 },
+    { date: "2013-17-08", description: "Sunglasses,UrbanOutfitters", category: "Fashion", amount: 900 },
+    { date: "2000-09-04", description: "Paycheck from Bob's burgers", category: "Income", amount: 400 },
     
   ];
 //use of .filter which filters transactions based on what the user has place in the search field
